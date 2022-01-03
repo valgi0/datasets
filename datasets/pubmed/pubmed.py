@@ -40,7 +40,7 @@ _LICENSE = ""
 # TODO: Add link to the official dataset URLs here
 # The HuggingFace dataset library don't host the datasets but only point to the original files
 # This can be an arbitrary nested dict/list of URLs (see below in `_split_generators` method)
-_URLs = [f"ftp://ftp.ncbi.nlm.nih.gov/pubmed/baseline/pubmed21n{i:04d}.xml.gz" for i in range(1, 1063)]
+_URLs = [f"ftp://ftp.ncbi.nlm.nih.gov/pubmed/baseline/pubmed22n{i:04d}.xml.gz" for i in range(1, 1114)]
 
 
 # Copyright Ferry Boender, released under the MIT license.
@@ -147,7 +147,7 @@ class Pubmed(datasets.GeneratorBasedBuilder):
     """Pubmed citations records"""
 
     BUILDER_CONFIGS = [
-        datasets.BuilderConfig(name="2021", description="The 2021 annual record", version=datasets.Version("1.0.0")),
+        datasets.BuilderConfig(name="2022", description="The 2022 annual record", version=datasets.Version("1.0.0")),
     ]
 
     # FILLED automatically from features
